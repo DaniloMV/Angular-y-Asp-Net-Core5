@@ -1,0 +1,22 @@
+<input type="file" style="display: none;" #cargador>
+
+<button (click)="cargador.click()">Cargar Archivo</button>
+
+<h2>En cine</h2>
+
+<app-listado-peliculas [peliculas]="peliculasEnCines"></app-listado-peliculas>
+
+<h2>En extreno</h2>
+
+<app-listado-peliculas [peliculas]="peliculasProximosExtrenos"></app-listado-peliculas>
+
+<p>Hola mundo</p>
+<div>
+  {{ title }}
+</div>
+<div>La suma de 2 y 2 es {{ 2 + 2 }}</div>
+<div>El doble de 3 es {{ duplicarNumero(3) }}</div>
+
+
+
+
